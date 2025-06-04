@@ -38,6 +38,9 @@ Resources:
                 Action:
                   - s3:*
                   - cloudformation:*
+                Resource: "*"
+              - Effect: Allow
+                Action:
                   - iam:PassRole
                 Resource: "*"
 
