@@ -11,3 +11,15 @@ Resources:
           Value: RahulS3Bucket
         - Key: Environment
           Value: Production
+
+  RahulEc2Instance:
+    Type: AWS::EC2::Instance
+    Properties:
+      InstanceType: t2.micro
+      ImageId: ami-0953476d60561c955  # Example AMI ID, replace with a valid one for your region
+      KeyName: mykey # Replace with your key pair name
+      Tags:
+        - Key: Name
+          Value: RahulEc2Instance
+        - Key: Environment
+          Value: Production
