@@ -1,0 +1,13 @@
+AWSTemplateFormatVersion: '2010-09-09'
+
+Description: CloudFormation template to create an S3 bucket
+Resources:
+  RahulS3bucket:
+    Type: AWS::S3::Bucket
+    Properties:
+      BucketName: rahul-s3-bucket-1234567890
+      Tags:
+        - Key: Name
+          Value: RahulS3Bucket
+        - Key: Environment
+          Value: Production
